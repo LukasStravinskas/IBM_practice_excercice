@@ -1,0 +1,25 @@
+<h1 class= "text-center">
+  Weather temperature in Vilnius
+</h1>
+<ngb-datepicker 
+#dp [(ngModel)]="model"
+(navigate)="navigateEvent($event)"
+(ngModelChange)="changeEvent($event)"
+class="center-element"
+
+></ngb-datepicker>
+<div class="center-element move-down">
+  {{errorMessage}}
+</div>
+
+<div class = "center-element move-down">
+  <ul class= "list-group list-group-horizontal  scroll-wrapper squares">
+    <a *ngFor="let weatherModel of result" class=" max-width col-1-4 col flex-col flex-nowrap">
+        <div class ="module">
+          <h4>{{weatherModel.dateTime  | date:'HH:MM'}}</h4>
+          <h4><span *ngIf="weatherModel.temp > 0">+</span>{{weatherModel.temp}} <span>C</span></h4>
+          <h4>{{weatherModel.description}}</h4>
+        </div>
+    </a>
+  </ul>
+</div>

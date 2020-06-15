@@ -1,0 +1,48 @@
+h3 {
+    text-align: center; margin-bottom: 0;
+}
+h4 {
+    position: relative;
+}
+
+
+.module {
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    background-color: #48a1ce;
+}
+.module:hover {
+    background-color: #EEE;
+    cursor: pointer;
+    color: #607d8b;
+}
+.max-width {
+    width: 500px;
+}
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+.scroll-wrapper{
+  display:block;
+  max-width: 200px;
+  max-height:500px;
+  margin:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+.center-element {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%,-50%);
+}
+.move-down{
+    top: 20rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
