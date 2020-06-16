@@ -39,7 +39,7 @@ services:
     restart: always
 
     depends_on:
-      - db                                
+      - db
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db2:3306/weather_information?createDatabaseIfNotExist=true
       SPRING_DATASOURCE_USERNAME: root
